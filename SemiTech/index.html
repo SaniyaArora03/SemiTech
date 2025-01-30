@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>First phase</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex; /* Use Flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        background-image: url("/SemiTech/squid-game-3b[1].jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        margin: 0; /* Remove default margin */
+        color: aliceblue;
+    }
+
+
+    </style>
+</head>
+<body>
+    <audio controls>
+        <source src="VictoryLies.mp3" type="audio/mpeg">
+        The file is not supported
+    </audio>
+    <p>INPUT YOUR PASSWORD</p>
+    <!-- creatingform -->
+    <form>
+        <div>
+            <input  type="text" id="inputValue">
+        </div>
+    </form>
+    <button id="clickMe">Submit</button>
+    <div    class="disPara">
+        <p  id="newPara"></p>
+    </div>
+    <script>
+//         const pa="RYLI";
+//         const pc="CTO";
+//         const pf="VI";
+//        const newPara=document.getElementById("newPara");
+//        const pb="THI";
+//        const pD="ESWI";
+       
+       
+//        const pe="NYOU";
+//        const    password=document.getElementById("inputValue");
+//         const   display=()=>{
+//             // if correct
+//             if(password.value==pf+pc+pa+pD+pb+pe){
+                
+            
+// newPara.innerText="Go   to  Stage";
+
+//         }
+//         else{
+//             newPara.innerText="Wrong";
+//         }}
+//         document.getElementById("clickMe").addEventListener("click",display);
+(function(){
+    const _0x4c5d=document.getElementById("newPara");
+    const _0x6e7f=document.getElementById("inputValue");
+    const _0x1a3b=["RYLI","CTO","VI","THI","ESWI","NYOU"];
+
+    
+    function _0x8g9h(){
+        let _0xa1b2=_0x1a3b[2]+_0x1a3b[1]+_0x1a3b[0]+_0x1a3b[4]+_0x1a3b[3]+_0x1a3b[5];
+        _0x4c5d.innerText=(_0x6e7f.value===_0xa1b2)?"Go to Stage":"Wrong";
+    }
+    
+    document.getElementById("clickMe").addEventListener("click",_0x8g9h);
+})();
+    </script>
+</body>
+</html>
